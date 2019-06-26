@@ -1,0 +1,34 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 15fr 3fr;
+    margin: 0;
+}
+
+#screen-top{
+    background-color:rgb(132, 255, 132);
+}
+
+#screen-middle {
+    background-color:rgb(54, 207, 54);
+}
+
+#screen-bottom {
+    background-color:rgb(132, 255, 132);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#game-starter{
+    background-color:rgb(115, 147, 233);
+    cursor: pointer;
+    border:0.5vh solid rgb(52, 102, 241);
+}
+
+.frogs{
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    display: inline-block
+}
