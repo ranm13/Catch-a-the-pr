@@ -8,25 +8,15 @@ const Data = function(){
 
     //returns the list of frogs objects
     const getFrogs = () => _frogs
-
     let frogCounter = 0 //for giving an id to the frogs
-
     let level = 1 
-
-    let time = 6
-    
+    let time = 3
     let startText = "Start"
-
     let endText = ""
-    
     let score = 0
-
     const getLevel = () => level
-
     const getTime = () => time
-
     const getStartText = () => startText
-    
     const getEndText = () => endText
 
      //function for fiding frogs by ID
@@ -68,7 +58,13 @@ const Data = function(){
     //function for passing a level
     const passALevel = function(){
         level++
-        time = 2 + level
+        if(level <= 10){
+            time = 2 + level
+        }
+        else{
+            time = 13
+        }
+        
     }
 
     //start game function
@@ -85,10 +81,9 @@ const Data = function(){
         time = 3
         _frogs.splice(0)
         startText = "Start"
-        endText = `Alas, no more froggies for you! <br> Your score is ${score}`
+        endText = `Alas, no more froggies for you! <br> Your score is ${score} <br> The high score is 3645800484`
         score = 0
     }
-
 
     return{
         getFrogs,
