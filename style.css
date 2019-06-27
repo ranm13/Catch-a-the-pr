@@ -25,10 +25,23 @@ body{
     border:0.5vh solid rgb(52, 102, 241);
 }
 
+.game-text{
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-family: 'Stylish', sans-serif;
+    font-size: 2em;
+}
+
 .frogs{
-    background-color: black;
-    height: 30px;
-    width: 30px;
-    position: relative;
-    display: inline-block
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+}
+
+#end-messege{
+    color:red;
+    position: absolute;
+    top:40vh;
+    left:35vw;
 }
